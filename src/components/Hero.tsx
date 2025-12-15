@@ -2,11 +2,11 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center px-6"
+      className="min-h-screen flex items-center justify-center px-6 pt-24"
     >
       <div className="container max-w-4xl mx-auto text-center">
         <p className="animate-fade-up text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">
-          Designer & Developer
+          Product & Operations
         </p>
         
         <h1 className="animate-fade-up animation-delay-100 font-display text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-foreground mb-8 text-balance">
@@ -14,7 +14,7 @@ const Hero = () => {
         </h1>
         
         <p className="animate-fade-up animation-delay-200 font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Crafting thoughtful digital experiences at the intersection of design and technology.
+          I build and lead product teams in businesses with real-world complexity—marketplaces, service operations, and workforce-heavy delivery.
         </p>
         
         <div className="animate-fade-up animation-delay-300 mt-12">
