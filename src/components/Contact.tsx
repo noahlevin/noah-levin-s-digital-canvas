@@ -1,47 +1,43 @@
-import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
     <section id="contact" className="py-32 px-6 bg-card">
-      <div className="container max-w-4xl mx-auto text-center">
-        <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-4">
-          Get in Touch
-        </p>
-        
-        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-8">
-          Let's create something<br />
-          <span className="italic text-primary">meaningful</span> together
-        </h2>
-        
-        <p className="font-body text-lg text-muted-foreground max-w-xl mx-auto mb-12">
-          I'm always open to discussing new projects, creative ideas, or opportunities 
-          to be part of your vision.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a
-            href="mailto:hello@noahlevin.com"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background rounded-full font-body text-sm hover:bg-primary transition-colors"
-          >
-            <Mail className="w-4 h-4" />
-            hello@noahlevin.com
-          </a>
+      <div className="container max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-12 gap-12 md:gap-16">
+          <div className="md:col-span-4">
+            <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              Contact
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground">
+              Get in touch
+            </h2>
+          </div>
           
-          <div className="flex items-center gap-4">
-            {[
-              { name: "LinkedIn", url: "#" },
-              { name: "Twitter", url: "#" },
-              { name: "Dribbble", url: "#" },
-            ].map((social) => (
+          <div className="md:col-span-8 space-y-8">
+            <p className="font-body text-lg text-muted-foreground leading-relaxed">
+              If you're building something in the real world—services, marketplaces, or ops-heavy product—send me a note with a concrete ask.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row items-start gap-6">
               <a
-                key={social.name}
-                href={social.url}
-                className="group inline-flex items-center gap-1 text-sm font-body text-muted-foreground hover:text-foreground transition-colors"
+                href="mailto:noah@noahlevin.com"
+                className="group inline-flex items-center gap-3 text-foreground font-body hover:text-primary transition-colors"
               >
-                {social.name}
-                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <Mail className="w-4 h-4" />
+                noah@noahlevin.com
               </a>
-            ))}
+              
+              <a
+                href="https://linkedin.com/in/noahlevin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 text-foreground font-body hover:text-primary transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                linkedin.com/in/noahlevin
+              </a>
+            </div>
           </div>
         </div>
       </div>

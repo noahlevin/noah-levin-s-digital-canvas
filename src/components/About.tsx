@@ -14,24 +14,19 @@ const About = () => {
           
           <div className="md:col-span-8 space-y-6">
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              I'm a designer and developer passionate about creating digital experiences 
-              that feel both intuitive and memorable. With over a decade of experience, 
-              I've had the privilege of working with startups and established companies alike.
+              I'm a product and operations leader based in Austin. I build products where software and operational execution are tightly coupled—then align teams around clear goals, metrics, and a path to measurable results.
             </p>
             
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              My approach blends strategic thinking with meticulous attention to detail. 
-              I believe the best digital products are those that respect users' time and 
-              intelligence while delighting them with thoughtful touches.
+              I'm currently VP Product at Honor, building technology that helps people age at home. My scope includes caregiver hiring and onboarding, operator tooling, and the product systems that connect day-to-day execution to unit economics. Previously at Honor, I initiated the product scoping and early build for the company's VA-related line of business, which is now an active program.
             </p>
             
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              Currently based in San Francisco, I'm always interested in meaningful 
-              collaborations and new challenges.
+              Previously, I was Chief Product Officer at Season Health, where we built a food-as-medicine platform and curated marketplace. Before that, I led Whole Foods Market's e-commerce and product organization—owning the e-commerce P&L and product roadmap—and earlier at Amazon I led products across Fresh / Prime Now, including the work that made grocery delivery a Prime benefit.
             </p>
             
             <div className="pt-6 flex flex-wrap gap-3">
-              {["Product Design", "Web Development", "Brand Strategy", "Creative Direction"].map((skill) => (
+              {["Product Strategy", "Operations", "Marketplaces", "Workforce Tech", "AI / ML", "Org Design", "Unit Economics"].map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 text-sm font-body text-secondary-foreground bg-secondary rounded-full"
